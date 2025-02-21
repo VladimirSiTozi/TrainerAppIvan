@@ -1,0 +1,497 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    color: #fff !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+
+/* Logo and nav */
+.logo-container {
+    height: 100px;
+    margin: 20px;
+}
+
+.logo-container img {
+    width: 500px;
+    height: auto;
+}
+
+.navigation-container {
+    height: 80px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.navigation-buttons a {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Add spacing between links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: inline-block; /* Ensure padding and margins work correctly */
+}
+
+.navigation-buttons a:hover {
+    background-color: whitesmoke; /* Darker background on hover */
+    color: #000;
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.navigation-buttons a:active {
+    transform: translateY(0); /* Reset lift effect when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow when active */
+}
+
+/* Resume */
+.resume {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 200px 50px 200px;
+
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-resume {
+    width: 450px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 2px; /* Add padding around the image */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    background-color: #000; /* Light background color */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+    /* Adjust as needed */
+}
+
+/* Best Seller */
+.best-seller {
+    padding: 50px 200px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.image-best-seller {
+    width: 300px;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    padding: 100px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 80px;
+}
+
+.learn-text {
+    padding-left: 30px;
+}
+
+.icon-list {
+    list-style: none;
+}
+
+.widget-button {
+    text-align: center;
+}
+
+.heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.secondaty-text {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 300px;
+    align-items: center;
+}
+
+/* Products container */
+.products {
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+
+.description {
+    font-size: 16px;
+    /* Adjust as needed */
+    margin: 10px 0 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    /* Adjust as needed */
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-text {
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card-button {
+    display: inline-block; /* Make the link behave like a block element */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    color: #fff; /* Text color */
+    background-color: #000; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-top: 10px; /* Add some spacing above the button */
+}
+
+.card-button:hover {
+    background-color: #fff; /* Darker background on hover */
+    color: #000;
+    text-decoration: none;
+}
+
+/* Overlapping container */
+.container-overlapping {
+    position: relative;
+    height: 600px;
+    padding: 0 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.right-container {
+    position: absolute;
+    width: 700px;
+    top: 50px;
+    right: 75px;
+}
+
+.image {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.image.one {
+    top: 50px;
+    left: 50px;
+}
+
+.image.two {
+    top: 150px;
+    left: 280px;
+    z-index: 2;
+}
+
+/* .image.three {
+    top: 10px;
+    left: 350px;
+ } */
+
+img {
+    border-radius: 10px;
+}
+
+.image.one img {
+    width: 350px;
+    height: auto;
+}
+
+.image.two img {
+    width: 400px;
+    height: auto;
+}
+
+/* .image.three img {
+    width: 300px;
+    height: auto;
+} */
+
+/* Youtube videos container */
+.videos-content {
+    background-color: #007BFF;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+}
+
+.video-text {
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.video-img {
+    width: 300px;
+}
+
+/* About */
+.about {
+    padding: 20px 200px 50px 200px;
+}
+
+/* Footer */
+.footer-container {
+    margin: 0 200px;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
