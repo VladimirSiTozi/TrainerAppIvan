@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* Center align text and inline elements */
+        }
+
+        /* Main container */
+        .shop-main {
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            /* Semi-transparent white background */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Child containers */
+        .shop-container {
+            flex: 1;
+            /* Allow containers to grow and fill available space */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            /* Optional: Add border for visualization */
+            margin: 2px 0;
+            /* Add spacing between containers */
+            background-color: #f9f9f9;
+            /* Optional: Add background color */
+            box-sizing: border-box;
+            /* Include padding and border in element's total size */
+        }
+
+        .normal-container {
+            flex-direction: column;
+        }
+
+        .content-boxes {
+            gap: 50px;
+        }
+
+        /* Card  */
+        #card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        @media (max-width: 980px) {
+            #card {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 620px) {
+            #card {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        #card .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 18px;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+            font-family: roboto;
+            margin: 15px;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+
+        #card .card-image {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 250px; /* Fixed height for the image container */
+            overflow: hidden; /* Ensures the image doesn't overflow the container */
+        }
+
+        #card .card-image img {
+            width: 100%; /* Make the image fill the container width */
+            height: 100%; /* Make the image fill the container height */
+            object-fit: cover; /* Ensures the image covers the container without distortion */
+            border-top-left-radius: 15px; /* Match the container's border radius */
+            border-top-right-radius: 15px; /* Match the container's border radius */
+        }
+
+        #card .card-title h2 {
+            margin: 15px 25px 0px;
+            color: grey;
+            font-size: 28px;
+            text-align: left;
+            line-height: 1.5em;
+        }
+
+        #card .card-detail {
+            margin: 5px 5px;
+        }
+
+        #card .card-detail h3 {
+            color: grey;
+            font-size: 15px;
+            font-weight: 300;
+            text-align: left;
+            line-height: 1.5em;
+        }
+
+        #card .card-detail .date {
+            color: #f0b501;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        #card .card-text {
+            height: 100px;
+            margin: 0px 25px;
+        }
+
+        #card .card-text p {
+            color: grey;
+            font-size: 17px;
+            font-weight: 300;
+            text-align: left;
+            line-height: 1.5em;
+            margin: 0px;
+        }
+
+        #card .card-product-price {
+            margin: 15px;
+            text-align: center;
+        }
+
+        #card .card-product-price p {
+            font-size: 20px;
+            color: grey;
+            /* margin: 0px; */
+        }
+
+        #card span {
+            font-size: 25px;
+        }
+
+        #card .card-product-price button {
+            height: 50px;
+            width: 160px;
+            border: transparent;
+            border-radius: 60px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            background-color: #f0b501;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #card .card-product-price button:hover {
+            background-color: #ffd84e;
+        }
+
+        #card .card:hover {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shop-main">
+        <div class="shop-container">ONLINE SHOP</div>
+        <div class="shop-section">
+            <div class="shop-container text">some text</div>
+            <div class="shop-container">
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="boxing.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Boxing</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum </p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>34.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="boxing.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Boxing</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum
+                                maxime
+                                quod
+                                deserunt eligendi dolor</p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>34.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="power-lifting.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Power Lifting</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum
+                                maxime
+                                quod
+                                deserunt eligendi dolor</p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>50.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-section">
+            <div class="shop-container text">some text</div>
+            <div class="shop-container">
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="boxing.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Something</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum
+                                maxime
+                                quod
+                                deserunt eligendi dolor</p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>34.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="boxing.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Something else</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum
+                                maxime
+                                quod
+                                deserunt eligendi dolor</p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>51.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="power-lifting.jpg" alt="">
+                        </div>
+                        <div class="card-title">
+                            <h2>Something else..........</h2>
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum
+                                maxime
+                                quod
+                                deserunt eligendi dolor</p>
+                        </div>
+
+                        <div class="card-product-price">
+                            <p>$<span>50.99</span></p>
+                            <button type="button">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
