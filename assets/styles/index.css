@@ -6,6 +6,18 @@ body {
     color: #fff !important;
 }
 
+.main-container {
+    max-width: 1200px; /* Changed from 1000 to 1200px */
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    /* background: #333; */
+    /* Semi-transparent white background */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -108,10 +120,11 @@ body {
 
 /* Best Seller */
 .best-seller {
-    padding: 50px 200px;
+    padding: 20px 0px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 15px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .image-best-seller {
@@ -122,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 100px;
 }
 
@@ -238,17 +251,23 @@ body {
 .container-overlapping {
     position: relative;
     height: 600px;
-    padding: 0 50px;
+    /* padding: 0 700px; */
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 15px;
 }
 
+.left-container {
+    position: absolute;
+    width: 480px;
+    left: 25px;
+}
+
+
 .right-container {
     position: absolute;
-    width: 700px;
-    top: 50px;
-    right: 75px;
+    width: 500px;
+    right: 50px;
 }
 
 .image {
@@ -263,43 +282,32 @@ body {
 }
 
 .image.one {
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
 }
 
 .image.two {
-    top: 150px;
-    left: 280px;
+    top: 220px;
+    left: 200px;
     z-index: 2;
 }
-
-/* .image.three {
-    top: 10px;
-    left: 350px;
- } */
 
 img {
     border-radius: 10px;
 }
 
 .image.one img {
-    width: 350px;
+    width: 300px;
     height: auto;
 }
 
 .image.two img {
-    width: 400px;
+    width: 350px;
     height: auto;
 }
 
-/* .image.three img {
-    width: 300px;
-    height: auto;
-} */
-
 /* Youtube videos container */
 .videos-content {
-    background-color: #007BFF;
     display: flex;
     flex-direction: column;
     padding: 50px 200px;
@@ -322,12 +330,12 @@ img {
 
 /* About */
 .about {
-    padding: 20px 200px 50px 200px;
+    padding: 20px;
 }
 
 /* Footer */
 .footer-container {
-    margin: 0 200px;
+    margin: 0 150px;
 }
 
 .site-footer {
