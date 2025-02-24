@@ -9,8 +9,7 @@ body {
 .main-container {
     max-width: 1200px; /* Changed from 1000 to 1200px */
     width: 100%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: auto;
     /* background: #333; */
     /* Semi-transparent white background */
     /* border: 1px solid #ccc; */
@@ -58,14 +57,13 @@ body {
 
 .navigation-buttons a {
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none; /* Remove underline from links */
     font-weight: bold; /* Make text bold */
     border-radius: 5px; /* Rounded corners */
-    margin: 0 10px; /* Add spacing between links */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     display: inline-block; /* Ensure padding and margins work correctly */
 }
@@ -120,7 +118,7 @@ body {
 
 /* Best Seller */
 .best-seller {
-    padding: 20px 0px;
+    padding: 50px 0px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -250,8 +248,8 @@ body {
 /* Overlapping container */
 .container-overlapping {
     position: relative;
-    height: 600px;
-    /* padding: 0 700px; */
+    height: 675px;
+    padding: 50px 0;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -260,14 +258,14 @@ body {
 .left-container {
     position: absolute;
     width: 480px;
-    left: 25px;
+    left: 200px;
 }
 
 
 .right-container {
     position: absolute;
     width: 500px;
-    right: 50px;
+    right: 200px;
 }
 
 .image {
@@ -330,7 +328,7 @@ img {
 
 /* About */
 .about {
-    padding: 20px;
+    padding: 20px 20px 100px 20px;
 }
 
 /* Footer */
