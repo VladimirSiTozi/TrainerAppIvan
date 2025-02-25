@@ -1,4 +1,4 @@
-
+/* Common */
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +6,66 @@ body {
     color: #fff !important;
 }
 
+
+.heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.secondary-heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.trird-heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.special-text {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 24px; /* Slightly larger than regular text */
+    font-weight: 400; /* Bold text */
+}
+
+.text {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.secondaty-text {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.small-text {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 300px;
+    align-items: center;
+}
+
+/* Main container */
 .main-container {
     max-width: 1200px; /* Changed from 1000 to 1200px */
     width: 100%;
@@ -23,12 +83,6 @@ body {
     align-items: center;
     width: 100%;
 }
-
-.text {
-    margin: 10px 0 0;
-    font-size: 20px;
-}
-
 
 /* Logo and nav */
 .logo-container {
@@ -85,7 +139,6 @@ body {
     display: flex;
     align-items: flex-start;
     padding: 50px 200px 50px 200px;
-
 }
 
 .content {
@@ -94,14 +147,14 @@ body {
 }
 
 .image-resume {
-    width: 450px; /* Adjust as needed */
+    width: 450px; 
     height: auto; /* Maintain aspect ratio */
-    padding: 2px; /* Add padding around the image */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-    background-color: #000; /* Light background color */
+    /* padding: 2px;  */
+    border-radius: 15px; 
+    box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.3); 
+    /* background-color: #000;
     display: block; /* Ensure it behaves as a block element */
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto; 
 }
 
 .text-content {
@@ -151,34 +204,22 @@ body {
 
 .icon-list {
     list-style: none;
+    padding-left: 40px; /* Adjust this value to align with the red line */
 }
 
-.widget-button {
+.icon-list li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.icon {
+    position: absolute;
+    left: -40px; /* Adjust this value to align the icon with the red line */
+    top: 0;
+}
+/* .widget-button {
     text-align: center;
-}
-
-.heading-title {
-    color: #FFFFFF;
-    font-family: "Roboto", Sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.secondaty-text {
-    color: #FFFFFF;
-    font-family: "Roboto", Sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.buy-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    max-width: 300px;
-    align-items: center;
-}
+} */
 
 /* Products container */
 .products {
@@ -215,7 +256,7 @@ body {
 
 .card-image {
     width: 100%;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     height: auto;
     border-radius: 8px;
 }
