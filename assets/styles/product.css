@@ -1,4 +1,3 @@
-
 /* Main container */
 .product-main {
     max-width: 1000px;
@@ -80,8 +79,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 8px;
 }
+
+
 
 @media (max-width: 980px) {
     #card {
@@ -154,7 +155,7 @@
 }
 
 #card .card-text {
-    height: 100px;
+    height: 200px;
     margin: 0px 25px;
 }
 
@@ -170,16 +171,21 @@
 .card-product-price {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #ffffff; /* Background color for the container */
-    padding: 15px 20px; /* Padding inside the container */
+    padding: 6px; /* Padding inside the container */
     border-radius: 10px; /* Rounded corners */
+}
+
+.single-product {
+    justify-content: space-evenly;
+    padding: 8px;
 }
 
 .card-product-price p {
     margin: 0;
     font-size: 1.5rem; /* Font size for the price */
-    font-weight: bold;
+    font-style: italic;
     color: #333; /* Text color */
 }
 
