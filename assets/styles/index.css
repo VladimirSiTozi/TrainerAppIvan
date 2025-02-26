@@ -135,39 +135,82 @@ body {
 }
 
 /* Resume */
+/* Resume Section - Fitness Trainer */
 .resume {
     display: flex;
-    align-items: flex-start;
-    padding: 50px 200px 50px 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
 }
 
 .content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 60px; /* Space between image and text */
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .image-resume {
-    width: 450px; 
-    height: auto; /* Maintain aspect ratio */
-    /* padding: 2px;  */
-    border-radius: 15px; 
-    box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.3); 
-    /* background-color: #000;
-    display: block; /* Ensure it behaves as a block element */
-    margin: 0 auto; 
+    width: 400px; /* Slightly larger image for emphasis */
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-wrapper:hover .image-resume {
+    transform: scale(1.03); /* Slight zoom on hover */
 }
 
 .text-content {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 80px;
+    max-width: 600px; /* Limit text width for better readability */
 }
 
 .title {
-    margin: 0;
-    font-size: 24px;
-    /* Adjust as needed */
+    margin: 0 0 10px 0;
+    font-size: 36px;
+    font-weight: 700;
 }
+
+.subtitle {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.8; /* Improved line spacing */
+    margin-bottom: 30px;
+}
+
+.trainer-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between skills */
+}
+
+.trainer-skills li {
+    background-color: #e0e0e0; /* Light gray background for skills */
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners for skills */
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
 
 /* Best Seller */
 .best-seller {
@@ -322,7 +365,7 @@ body {
 
 .image.one {
     top: 20px;
-    left: 20px;
+    left: -20px;
 }
 
 .image.two {
@@ -336,7 +379,7 @@ img {
 }
 
 .image.one img {
-    width: 300px;
+    width: 350px;
     height: auto;
 }
 
