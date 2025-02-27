@@ -50,7 +50,7 @@
 .underline-text {
     position: relative;
     display: inline-block;
-    font-size: 2rem; /* Adjust font size as needed */
+    /* font-size: 2rem; */
     font-weight: bold;
     text-decoration: none; /* Remove default underline */
 }

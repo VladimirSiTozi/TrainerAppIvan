@@ -676,10 +676,10 @@ Bryan Moats, Mike Dornseif, Griffin Moore, Andrea Austoni, Jack Hughes, Jeremy F
 
 .collage-item:hover {
     z-index: 999;
-    transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
+    transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
     -o-transform: rotate(0deg);
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
