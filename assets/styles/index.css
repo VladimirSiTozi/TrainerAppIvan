@@ -304,11 +304,16 @@ body {
     text-decoration: none;
 }
 
+.home-card-image {
+    width: 316px;
+    height: 470px;
+}
+
 .home-card h3 {
     color: #FFF;
 }
 
-.card-image {
+.home-card-image {
     width: 100%;
     /* border: 1px solid #ccc; */
     height: auto;
@@ -346,6 +351,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hero2-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1600px;
 }
 
 .collage {
@@ -411,6 +425,7 @@ img {
 
 .video-img {
     width: 300px;
+    border-radius: 16px;
 }
 
 /* About */
