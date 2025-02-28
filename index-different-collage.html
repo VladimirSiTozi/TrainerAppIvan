@@ -11,6 +11,39 @@
     <!-- Font Awesome -->
 </head>
 
+<style>
+    .collage-container {
+        display: flex;
+        gap: 10px;
+        /* width: 100%; */
+        width: auto;
+        padding-bottom: 10px;
+        margin: auto;
+    }
+    .collage-container img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+
+    .big-img img {
+        width: 330px;
+        height: 220px;
+    }
+
+    .sml-img img {
+        width: 160px;
+        height: 220px;
+    }
+
+    .collage {
+        margin-bottom: 10px;
+    }
+
+</style>
+
 <body>
     
     <div class="container logo-container">
@@ -167,25 +200,32 @@
     <div class="hero2">
         <div class="collage">
             <!-- Top Set -->
-            <div class="collage-item">
-                <img src="assets/images/ivan.jpg" alt="Collage Photo">
+            <div class="collage-container">
+                <div class="big-img">
+                    <img src="assets/images/fight/mma-woman.jpg" alt="Image 1">
+                </div>
+                <div class="sml-img ">
+                    <img src="assets/images/fight/mma-woman2.jpg" alt="Image 2">
+                </div>
+                <div class="sml-img ">
+                    <img src="assets/images/fight/mma-woman9.jpg" alt="Image 3">
+                </div>
             </div>
-            <div class="collage-item">
-                <img src="assets/images/ivan2.jpg" alt="Collage Photo">
-            </div>
-            <div class="collage-item">
-                <img src="assets/images/ivan3.jpg" alt="Collage Photo">
-            </div>
-            <div class="collage-item">
-                <img src="assets/images/ivan5.jpg" alt="Collage Photo">
-            </div>
-            <div class="collage-item">
-                <img src="assets/images/ivan2.jpg" alt="Collage Photo">
+            <div class="collage-container">
+                <div class="sml-img ">
+                    <img src="assets/images/fight/mma-woman5.jpg" alt="Image 4">
+                </div>
+                <div class="sml-img ">
+                    <img src="assets/images/fight/mma-woman6.jpg" alt="Image 5">
+                </div>
+                <div class="big-img">
+                    <img src="assets/images/fight/mma-woman4.jpg" alt="Image 6">
+                </div>
             </div>
         </div>
 
         <div class="right-container">
-            <h1 class="underline-text heading-title">Your Title Here</h1>
+            <h1 class="heading-title">Your Title Here</h1>
             <p class="secondaty-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a, sit magni
                 unde reiciendis asperiores
                 possimus praesentium deserunt facere excepturi, nobis cumque? Sint, iure obcaecati harum, recusandae
@@ -255,7 +295,7 @@
 
     <div class="main-container">
         <div class="about">
-            <h2 class="underline-text heading-title">About</h2>
+            <h2 class="heading-title">About</h2>
             <p class="secondaty-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, placeat quod,
                 nostrum quia veritatis quis soluta aperiam, non dicta quo necessitatibus ex esse vero labore corrupti
                 eligendi facere cum illum consequatur iure magnam quibusdam reiciendis. Deserunt, voluptas ab cum vel

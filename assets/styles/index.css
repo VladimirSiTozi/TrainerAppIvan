@@ -291,13 +291,21 @@ body {
     gap: 25px;
 }
 
-.card {
+.home-card {
     width: 300px;
     /* Adjust as needed */
     margin: 10px;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
+}
+
+.home-card a:hover {
+    text-decoration: none;
+}
+
+.home-card h3 {
+    color: #FFF;
 }
 
 .card-image {
@@ -311,6 +319,7 @@ body {
     font-family: "Roboto", Sans-serif;
     font-size: 20px;
     font-weight: 300;
+    color: #FFFFFF;
 }
 
 .card-button {
