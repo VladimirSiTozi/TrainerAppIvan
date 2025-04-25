@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="assets/styles/cart.css" />
+</head>
+<body>
+  <div class="cart-container">
+    <h1 class="cart-title">Your Shopping Cart</h1>
+    
+    <div class="cart-items">
+      <!-- Item 1 -->
+      <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product Image" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Product Name</h3>
+          <p class="item-desc">Short product description goes here.</p>
+          <div class="item-controls">
+            <input type="number" value="1" min="1" class="item-quantity" disabled>
+            <span class="item-price">$29.99</span>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product Image" class="item-image">
+        <div class="item-details">
+          <h3 class="item-name">Product Name1</h3>
+          <p class="item-desc">Short product description goes here.</p>
+          <div class="item-controls">
+            <input type="number" value="1" min="1" class="item-quantity" disabled>
+            <span class="item-price">$21.99</span>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <h2>Summary</h2>
+      <p class="summary-subtotal">Subtotal: <span id="subtotal">$0.00</span></p>
+      <p class="summary-total">Total: <span id="total">$0.00</span></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Load the script at the end of the body -->
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
