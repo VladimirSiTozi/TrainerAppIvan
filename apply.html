@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - Getting Started</title>
+    <style>
+        .apply-container-wrapper{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .apply-container {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .message {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-login {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-login:hover {
+            background-color: #2980b9;
+        }
+        .btn-form {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .btn-form:hover {
+            background-color: #27ae60;
+        }
+        .note {
+            margin-top: 30px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="apply-container-wrapper">
+        <div class="apply-container">
+            <h1>Application Form</h1>
+            
+            <div class="message">
+                <p>To continue with the application form, you need to be signed in to your account.</p>
+                <p>If you already have an account, please sign in below. If you don't have an account yet, you'll be able to create one during the sign-in process.</p>
+            </div>
+            
+            <div class="actions">
+                <a href="/login" class="btn btn-login">Sign In</a>
+                <a href="/form" class="btn btn-form">Go to Form</a>
+            </div>
+            
+            <div class="note">
+                <p>Note: You will be redirected to the sign-in page if you attempt to access the form without being authenticated.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
